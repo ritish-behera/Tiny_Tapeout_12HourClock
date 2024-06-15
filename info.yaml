@@ -17,14 +17,15 @@ project:
   # Source files must be in ./src and you must list each source file separately, one per line.
   # Don't forget to also update `PROJECT_SOURCES` in test/Makefile.
   source_files:
-    - "my_design.v"
+    - "digitalClock.v"
+    - "project.v"
 
 # The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
 pinout:
   # Inputs
-  ui[0]: "clk"
-  ui[1]: "reset"
-  ui[2]: "en"
+  ui[0]: "en"
+  ui[1]: ""
+  ui[2]: ""
   ui[3]: ""
   ui[4]: ""
   ui[5]: ""
@@ -32,24 +33,24 @@ pinout:
   ui[7]: ""
 
   # Outputs
-  uo[0]: "dispEn"
-  uo[1]: "seg"
-  uo[2]: "dp"
-  uo[3]: ""
-  uo[4]: ""
-  uo[5]: ""
-  uo[6]: ""
-  uo[7]: ""
+  uo[0]: "dp"
+  uo[1]: "seg[0]"
+  uo[2]: "seg[1]"
+  uo[3]: "seg[2]"
+  uo[4]: "seg[3]"
+  uo[5]: "seg[4]"
+  uo[6]: "seg[5]"
+  uo[7]: "seg[6]"
 
   # Bidirectional pins
-  uio[0]: ""
-  uio[1]: ""
-  uio[2]: ""
-  uio[3]: ""
-  uio[4]: ""
-  uio[5]: ""
-  uio[6]: ""
-  uio[7]: ""
+  uio[0]: "dispEn[0]"
+  uio[1]: "dispEn[1]"
+  uio[2]: "dispEn[2]"
+  uio[3]: "dispEn[3]"
+  uio[4]: "dispEn[4]"
+  uio[5]: "dispEn[5]"
+  uio[6]: "dispEn[6]"
+  uio[7]: "dispEn[7]"
 
 # Do not change!
 yaml_version: 6
