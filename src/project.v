@@ -16,6 +16,22 @@ module tt_um_example (
     input  wire       rst_n     // reset_n - low to reset
 );
 
+
+    tt_um_ritish_behera_digitalClock dut(
+        
+        .clk        (clk),
+        .reset      (rst_n),
+        .en         (ui_in[0]),
+        
+        .dp         (uo_out[0]),
+        .seg        (uo_out[7:1]),
+        .dispEn     (uio_out[7:0])
+        
+    );
+
+
+
+    
   // All output pins must be assigned. If not used, assign to 0.
   assign uo_out  = ui_in + uio_in;  // Example: ou_out is the sum of ui_in and uio_in
   assign uio_out = 0;
