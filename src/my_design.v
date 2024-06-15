@@ -21,12 +21,13 @@
 
 module tt_um_ritish_behera_digitalClock(
 
-    input wire clk,        					// Clock signal
-    input wire reset,  						  // Reset button signal
-  	input en,								        // Enable
-  	output reg [7:0]dispEn,					// Output disply position
+    						  // Enable
+    output reg [7:0]dispEn,					  // Output disply position
   	output reg [6:0] seg,					  // Seven segment digit code
-  	output dp								        // Seven Segment Display Dot
+  	output dp,                                // Seven Segment Display Dot
+    input wire clk,        					  // Clock signal
+    input wire reset,  						  // Reset button signal
+  	input  wire en,
 ); 
   
   reg [3:0] hour2,hour1,minute2,minute1,sec2,sec1,display;
