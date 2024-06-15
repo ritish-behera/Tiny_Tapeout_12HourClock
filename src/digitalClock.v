@@ -19,7 +19,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module tt_um_ritish_behera_digitalClock(
+module digitalClock(
 
     output reg [7:0]dispEn,					  // Output disply position
   	output reg [6:0] seg,					  // Seven segment digit code
