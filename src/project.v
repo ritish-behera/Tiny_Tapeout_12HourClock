@@ -20,7 +20,7 @@ module tt_um_ritish_behera_digitalClock (
     digitalClock inst(
         
         .clk        (clk),
-        .reset      (rst_n),
+        .reset      (!rst_n),
         .en         (ui_in[0]),
         
         .dp         (uo_out[7]),
