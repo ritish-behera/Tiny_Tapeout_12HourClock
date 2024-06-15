@@ -23,8 +23,8 @@ module tt_um_ritish_behera_digitalClock (
         .reset      (rst_n),
         .en         (ui_in[0]),
         
-        .dp         (uo_out[0]),
-        .seg        (uo_out[7:1]),
+        .dp         (uo_out[7]),
+        .seg        (uo_out[6:0]),
         .dispEn     (uio_out[7:0])
         
     );
