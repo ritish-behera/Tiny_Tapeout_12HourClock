@@ -5,7 +5,7 @@
 
 `default_nettype none
 
-module tt_um_example (
+module tt_um_ritish_behera_digitalClock (
     input  wire [7:0] ui_in,    // Dedicated inputs
     output wire [7:0] uo_out,   // Dedicated outputs
     input  wire [7:0] uio_in,   // IOs: Input path
@@ -17,7 +17,7 @@ module tt_um_example (
 );
 
 
-    tt_um_ritish_behera_digitalClock dut(
+    digitalClock inst(
         
         .clk        (clk),
         .reset      (rst_n),
