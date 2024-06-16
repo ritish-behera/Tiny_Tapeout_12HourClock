@@ -184,7 +184,7 @@ module user_clock2(clk,tranSpeed);				// module for fpga clock2 to control trans
   always @(posedge clk)
  begin
     count <= count + 1;
-   if (count == 10) begin
+     if (count == 1000) begin
       	count <= 0;
       	clk_out <= ~clk_out;
       end
